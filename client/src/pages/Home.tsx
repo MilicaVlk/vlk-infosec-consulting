@@ -1,11 +1,9 @@
 import {
-  ArrowRight,
   ArrowUpRight,
   BarChart3,
   CheckCircle2,
   Compass,
   Layers3,
-  Network,
   ShieldCheck,
 } from "lucide-react";
 
@@ -23,12 +21,6 @@ const brand = {
   gold: "#d4a574",
 };
 
-const contactLinks = {
-  info: "mailto:info@vlk-infosec.com",
-  contact: "mailto:contact@vlk-infosec.com",
-  vciso: "mailto:vciso.services@vlk-infosec.com",
-  grc: "mailto:grc@vlk-infosec.com",
-};
 
 const services = [
   {
@@ -54,10 +46,66 @@ const services = [
   },
 ];
 
+const coreExpertiseList = [
+  "vCISO Services",
+  "Cyber Risk Assessments",
+  "Governance, Risk & Compliance (GRC)",
+  "ISO 27001 & Frameworks",
+  "NIST Cybersecurity Framework",
+  "Business Impact Analysis (BIA)",
+  "Business Continuity Planning",
+  "Disaster Recovery",
+  "Security Governance",
+  "Security Policies & Standards",
+  "Third-Party Risk",
+  "Security Strategy",
+];
+
+const telecomExperienceList = [
+  "IPTV & Headend (Middleware, VOD, nPVR)",
+  "Access & Distributed Infrastructure",
+  "Radio Network Optimization (GSM, UMTS, LTE)",
+  "Systems Integration & Vendor Coordination",
+  "High Availability & Production Resilience",
+];
+
 const competencies = [
   ["01", "Technical Depth", "Challenge assumptions across security architecture, infrastructure, applications, cloud environments, vulnerabilities and controls."],
   ["02", "Business Acumen", "Connect cybersecurity with business objectives, financial impact, operational priorities and customer expectations."],
   ["03", "Communication Skills", "Translate complex cybersecurity risks into clear language for executives, boards, technical teams and other stakeholders."],
+];
+
+const executiveSectors = [
+  {
+    industry: "Small Business",
+    quote: "We are a small company. Why would anyone target us?",
+    reality: "Ransomware locks files, email stops working, and customer data is exposed. Questions instantly shift to operational continuity, backups, regulatory notification, and decision-making authority.",
+  },
+  {
+    industry: "SaaS Company",
+    quote: "Our platform is secure. But what happens if a customer is compromised through us?",
+    reality: "Tenant isolation, asset visibility, environment separation, and contractual compliance become critical when security extends directly into your product delivery.",
+  },
+  {
+    industry: "FinTech & Financial Services",
+    quote: "Money hasn’t been lost yet. Are we sure?",
+    reality: "Suspicious transactions, compromised privileged accounts, or third-party incidents require immediate authority, regulatory reporting, and trustworthy validation.",
+  },
+  {
+    industry: "Healthcare",
+    quote: "Can we still safely provide care?",
+    reality: "Ransomware taking clinical systems offline turns cybersecurity instantly into an operational continuity and patient safety crisis.",
+  },
+  {
+    industry: "Telecom & Critical Infrastructure",
+    quote: "What happens if the network cannot be trusted?",
+    reality: "Signalling integrity, subscriber authentication, core segmentation, and degraded-mode resilience determine whether critical utility services survive an attack.",
+  },
+  {
+    industry: "Manufacturing & OT",
+    quote: "Can we safely keep the factory running?",
+    reality: "When IT incidents reach production environments, safety, OT/IT segmentation, manual continuity, and ERP availability dictate operational survival.",
+  },
 ];
 
 const functions = [
@@ -168,36 +216,110 @@ export default function Home() {
             <span className="font-brand text-lg font-bold tracking-tight text-[#fbf8ef]">VLK InfoSec <span className="text-[#d4a574]">Consulting</span></span>
           </a>
           <nav className="hidden items-center gap-7 md:flex" aria-label="Primary navigation">
+            <a href="#about" className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-white/65 hover:text-[#f2d39b]">About</a>
             <a href="#services" className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-white/65 hover:text-[#f2d39b]">Services</a>
+            <a href="#executive-insights" className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-white/65 hover:text-[#f2d39b]">Executive Insights</a>
             <a href="#competencies" className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-white/65 hover:text-[#f2d39b]">Competencies</a>
             <a href="#functions" className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-white/65 hover:text-[#f2d39b]">Functions</a>
-            <a href="#contact" className="border-l border-[#d4a574]/35 pl-7 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[#f2d39b] hover:text-white">Contact</a>
           </nav>
-          <a href={contactLinks.contact} aria-label="Open general contact email" className="hidden border border-[#d4a574]/60 px-4 py-2 text-[0.64rem] font-bold uppercase tracking-[0.16em] text-[#f2d39b] hover:bg-[#d4a574] hover:text-[#000030] sm:inline-flex">Ask a question <ArrowUpRight className="ml-2 h-4 w-4" /></a>
         </div>
       </header>
 
       <main id="top">
         <section className="vlk-wave-surface vlk-grid relative isolate overflow-hidden border-b border-[#d4a574]/30">
           <NetworkOrnament />
-          <div className="container relative z-10 grid items-center gap-14 py-20 lg:min-h-[700px] lg:grid-cols-[0.85fr_1.15fr] lg:py-28">
-            <div className="max-w-xl">
-              <SectionLabel number="00">vCISO · RISK ASSESSMENT · GRC · COMPLIANCE</SectionLabel>
+          <div className="container relative z-10 flex min-h-[560px] items-center justify-center py-24 lg:min-h-[700px] lg:py-28">
+            <div className="max-w-4xl text-center">
+              <div className="flex justify-center"><SectionLabel number="00">vCISO · RISK ASSESSMENT · GRC · COMPLIANCE</SectionLabel></div>
               <h1 className="display-heading mt-7 text-5xl leading-[0.98] text-[#fbf8ef] sm:text-6xl lg:text-[5.4rem]">Strategic security leadership for a changing world.</h1>
               <p className="mt-8 max-w-lg text-lg leading-8 text-white/70">Virtual CISO services that connect cybersecurity direction with business reality, governance and measurable assurance.</p>
-              <div className="mt-10 flex flex-wrap gap-4">
-                <a href={contactLinks.info} className="inline-flex items-center gap-3 bg-[#d4a574] px-6 py-4 text-sm font-bold text-[#000030] hover:-translate-y-1 hover:bg-[#f2d39b] hover:shadow-[0_12px_32px_rgba(212,165,116,0.24)]">Learn more <ArrowRight className="h-4 w-4" /></a>
-                <a href={contactLinks.contact} className="inline-flex items-center gap-3 border border-[#d4a574]/60 px-6 py-4 text-sm font-bold text-[#f2d39b] hover:border-[#f2d39b] hover:bg-white/5">Ask a question <ArrowUpRight className="h-4 w-4" /></a>
-              </div>
-              <div className="mt-12 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.16em] text-white/45"><span className="h-2 w-2 rounded-full bg-[#e02060] shadow-[0_0_12px_#e02060]" />vlk-infosec.com</div>
+              <div className="mt-12 flex items-center justify-center gap-3 text-xs font-bold uppercase tracking-[0.16em] text-white/45"><span className="h-2 w-2 rounded-full bg-[#e02060] shadow-[0_0_12px_#e02060]" />vlk-infosec.com</div>
             </div>
-            <div className="vlk-frame relative flex min-h-[360px] items-center justify-center overflow-hidden p-8 sm:min-h-[430px]">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(96,0,192,0.32),transparent_40%),radial-gradient(circle_at_70%_70%,rgba(208,16,96,0.22),transparent_44%)]" />
-              <div className="relative z-10 flex flex-col items-center gap-8 text-center">
-                <img src={brand.logo} alt="VLK InfoSec Shield Logo" className="h-40 w-40 rounded-full border-2 border-[#d4a574]/75 object-cover shadow-[0_0_55px_rgba(212,165,116,0.25)]" />
-                <div className="h-px w-36 bg-gradient-to-r from-transparent via-[#f2d39b] to-transparent" />
-                <TriangleMotif compact />
-                <span className="text-[0.65rem] font-bold uppercase tracking-[0.22em] text-[#f2d39b]">Direction · Structure · Assurance</span>
+          </div>
+        </section>
+
+        <section id="about" className="relative overflow-hidden bg-[#000030] py-24 lg:py-32 border-b border-[#d4a574]/20">
+          <NetworkOrnament />
+          <div className="container relative z-10 grid gap-16 lg:grid-cols-2">
+            <div>
+              <SectionLabel number="01">ABOUT THE FOUNDER</SectionLabel>
+              <h2 className="display-heading mt-7 text-4xl leading-[1.02] sm:text-5xl">Technology experience. Cybersecurity perspective. Business-focused security.</h2>
+              <p className="mt-8 text-lg leading-8 text-white/75">
+                VLK InfoSec Consulting was founded by Milica Vlk, a telecommunications engineer and cybersecurity professional with 17+ years of experience across technology, infrastructure, engineering, project management, and information security.
+              </p>
+              <p className="mt-6 leading-7 text-white/65">
+                My career started close to the technology itself—building, operating, troubleshooting, and improving complex technology environments long before cybersecurity became the discipline it is today.
+              </p>
+              <div className="mt-8 rounded-2xl border border-[#d4a574]/30 bg-[#050518]/80 p-6 backdrop-blur">
+                <p className="text-sm font-semibold uppercase tracking-wider text-[#f2d39b]">From Engineering to Leadership</p>
+                <p className="mt-3 text-sm leading-6 text-white/70">
+                  My career gradually expanded from hands-on engineering into technical leadership, project management, and program management at Telekom Srbija and TeleGroup, evolving naturally into comprehensive cybersecurity governance and vCISO advisory.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col justify-between gap-8">
+              <div className="vlk-frame p-8 sm:p-10">
+                <h3 className="text-xl font-bold text-[#fbf8ef]">Experience at a Glance</h3>
+                <p className="mt-2 text-sm text-white/60">17+ years bridging engineering, infrastructure, and governance.</p>
+                <div className="mt-6 space-y-4 text-sm text-white/70">
+                  <div className="border-b border-[#d4a574]/15 pb-3">
+                    <span className="font-bold text-[#f2d39b]">11 Years at Telekom Srbija:</span> IPTV & Headend, VOD & nPVR, access networks, mobile radio optimization (GSM/UMTS/LTE), systems integration, and high-availability operations.
+                  </div>
+                  <div className="border-b border-[#d4a574]/15 pb-3">
+                    <span className="font-bold text-[#f2d39b]">Cybersecurity & Leadership:</span> Security engineering, program management, risk assessment, governance frameworks, and technical team mentoring at TeleGroup.
+                  </div>
+                  <div>
+                    <span className="font-bold text-[#f2d39b]">Professional Development:</span> CISSP (ISC2, in progress) & CEH v13 (EC-Council, in progress).
+                  </div>
+                </div>
+              </div>
+              <div className="vlk-frame border-l-4 border-l-[#d4a574] p-6 text-sm italic text-white/80">
+                "What changed was the perspective—from securing individual technologies and services to looking at security as an organizational capability that enables business growth."
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="relative overflow-hidden bg-[#050518] py-24 lg:py-32 border-b border-[#d4a574]/20">
+          <NetworkOrnament />
+          <div className="container relative z-10 grid gap-16 lg:grid-cols-[1.1fr_0.9fr]">
+            <div>
+              <SectionLabel number="02">FOUNDATION & PERSPECTIVE</SectionLabel>
+              <h2 className="display-heading mt-7 text-4xl leading-[1.02] sm:text-5xl">Building security that works in the real world.</h2>
+              <div className="mt-8 space-y-6 text-white/75">
+                <p className="leading-7">
+                  I spent 11 years building the technical foundation that later shaped my approach to cybersecurity. From contributing to the early development and scale of large IPTV, VOD, and nPVR platforms to working as a radio network optimization engineer across GSM, UMTS, and LTE environments, I gained deep insight into complex production systems.
+                </p>
+                <p className="leading-7">
+                  Alongside telecommunications engineering, I worked as a software developer, gaining another perspective on complex systems—from software and interfaces to infrastructure and service performance. Working across these environments taught me to look beyond individual technologies and understand how dependencies exist, how changes propagate, and where operational risks emerge.
+                </p>
+                <p className="leading-7">
+                  For me, cybersecurity was never a complete career change; it was a natural continuation. Firewalls, networks, servers, access controls, availability, segmentation, and operational risk were already part of my technical world long before cybersecurity became as widely discussed as it is today.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col justify-between gap-8">
+              <div className="vlk-frame p-8 sm:p-10">
+                <h3 className="text-xl font-bold text-[#fbf8ef]">Core Focus Areas</h3>
+                <p className="mt-2 text-sm text-white/60">Comprehensive frameworks and practical advisory services.</p>
+                <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  {coreExpertiseList.map((item, i) => (
+                    <div key={i} className="flex items-center gap-3 rounded-lg border border-[#d4a574]/20 bg-[#000030]/60 px-4 py-3 text-xs font-semibold text-[#f2d39b]">
+                      <span className="h-1.5 w-1.5 rounded-full bg-[#d4a574]" />
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="vlk-frame p-8">
+                <h4 className="font-bold text-[#f2d39b]">Telecom & Tech Background</h4>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {telecomExperienceList.map((item, i) => (
+                    <span key={i} className="rounded border border-white/15 bg-white/5 px-3 py-1.5 text-xs text-white/70">
+                      {item}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -211,7 +333,6 @@ export default function Home() {
                 <SectionLabel number="01">WHAT A vCISO DOES</SectionLabel>
                 <h2 className="display-heading mt-7 max-w-md text-4xl leading-[1.02] sm:text-5xl">Security becomes manageable when someone owns the whole picture.</h2>
                 <p className="mt-7 max-w-sm leading-7 text-white/60">A vCISO brings executive-level focus to strategy, risk and compliance while creating the structure needed for security to become repeatable and measurable.</p>
-                <a href={contactLinks.vciso} className="mt-10 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.18em] text-[#f2d39b] hover:text-white"><Network className="h-5 w-5 text-[#d4a574]" />Learn more about vCISO services <ArrowUpRight className="h-4 w-4" /></a>
               </div>
               <div className="grid gap-4">
                 {services.map((service) => {
@@ -253,15 +374,66 @@ export default function Home() {
           </div>
         </section>
 
+        <section id="executive-insights" className="relative overflow-hidden bg-[#050518] py-24 lg:py-32 border-b border-[#d4a574]/20">
+          <NetworkOrnament />
+          <div className="container relative z-10">
+            <div className="max-w-3xl">
+              <SectionLabel number="03">C-LEVEL & BOARD PERSPECTIVE</SectionLabel>
+              <h2 className="display-heading mt-7 text-4xl leading-[1.02] sm:text-5xl">When something goes wrong, what happens next?</h2>
+              <p className="mt-6 text-lg leading-8 text-white/75">
+                Cybersecurity is not only about preventing an incident. It is about knowing what to do when prevention fails. When management faces a crisis, technical reports are no longer enough—leadership teams ask critical governance questions.
+              </p>
+            </div>
+            <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {executiveSectors.map((item, idx) => (
+                <div key={idx} className="vlk-frame flex flex-col justify-between p-7 sm:p-8">
+                  <div>
+                    <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2d39b]">{item.industry}</span>
+                    <blockquote className="mt-4 text-base font-semibold leading-snug text-[#fbf8ef]">
+                      "{item.quote}"
+                    </blockquote>
+                  </div>
+                  <div className="mt-6">
+                    <p className="text-sm leading-6 text-white/60">
+                      {item.reality}
+                    </p>
+                    <div className="mt-5 pt-4 border-t border-[#d4a574]/15 flex justify-end">
+                      <a
+                        href="mailto:contact@vlk-infosec.com"
+                        className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#f2d39b] hover:text-white transition-colors"
+                      >
+                        Razgovarajmo <ArrowUpRight className="h-3.5 w-3.5" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="mt-16 rounded-3xl border border-[#d4a574]/40 bg-gradient-to-r from-[#000030] via-[#050518] to-[#000030] p-8 sm:p-12 text-center shadow-2xl">
+              <h3 className="text-2xl font-bold text-[#fbf8ef] sm:text-3xl">The questions that matter before the incident</h3>
+              <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-white/70">
+                What are our most critical assets? What could stop the business? Who makes the decisions? These are not questions to be answered for the first time during a crisis. Let's discuss how a vCISO program establishes governance and response readiness beforehand.
+              </p>
+              <div className="mt-8 flex justify-center">
+                <a
+                  href="mailto:contact@vlk-infosec.com"
+                  className="inline-flex items-center gap-3 rounded-xl bg-[#d4a574] px-8 py-4 text-sm font-bold text-[#000030] shadow-[0_8px_30px_rgba(212,165,116,0.25)] transition-all hover:-translate-y-0.5 hover:bg-[#f2d39b]"
+                >
+                  Razgovarajmo o vašem riziku <ArrowUpRight className="h-4 w-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="functions" className="relative overflow-hidden bg-[#000030] py-24 lg:py-32">
           <NetworkOrnament />
           <div className="container relative z-10 grid gap-14 lg:grid-cols-[0.75fr_1.25fr]">
             <div>
-              <SectionLabel number="03">THE 3 CORE FUNCTIONS OF A vCISO</SectionLabel>
+              <SectionLabel number="04">THE 3 CORE FUNCTIONS OF A vCISO</SectionLabel>
               <h2 className="display-heading mt-7 max-w-md text-4xl leading-[1.02] sm:text-5xl">Direction. Structure. Assurance.</h2>
               <p className="mt-7 max-w-sm leading-7 text-white/65">Not by doing every technical task personally—but by ensuring the right security work is prioritized, performed and measured.</p>
               <div className="mt-10"><TriangleMotif /></div>
-              <a href={contactLinks.grc} className="mt-8 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.18em] text-[#f2d39b] hover:text-white">Learn more about GRC <ArrowUpRight className="h-4 w-4" /></a>
             </div>
             <div className="grid gap-4">
               {functions.map((item) => (
@@ -300,8 +472,7 @@ export default function Home() {
 
         <section id="contact" className="vlk-wave-surface relative overflow-hidden border-t border-[#d4a574]/30 py-24 lg:py-28">
           <div className="container relative z-10 grid items-end gap-10 md:grid-cols-[1fr_auto]">
-            <div><SectionLabel number="06">CONVERSATION</SectionLabel><h2 className="display-heading mt-7 max-w-3xl text-4xl leading-[1.02] sm:text-5xl">Bring senior security leadership into the room.</h2><p className="mt-6 max-w-2xl text-lg leading-8 text-white/65">Let's discuss how vCISO services can align cybersecurity with business objectives and build a security program that can be trusted.</p><div className="mt-8 flex flex-wrap gap-5 text-sm text-white/65"><span>vlk-infosec.com</span><span className="text-[#d4a574]">·</span><a href={contactLinks.contact} className="text-[#f2d39b] hover:text-white">Ask a question</a></div></div>
-            <a href={contactLinks.contact} className="inline-flex items-center justify-center gap-3 bg-[#d4a574] px-7 py-4 text-sm font-bold text-[#000030] hover:-translate-y-1 hover:bg-[#f2d39b] hover:shadow-[0_12px_32px_rgba(212,165,116,0.24)]">Ask a question <ArrowUpRight className="h-4 w-4" /></a>
+            <div><SectionLabel number="06">CONVERSATION</SectionLabel><h2 className="display-heading mt-7 max-w-3xl text-4xl leading-[1.02] sm:text-5xl">Bring senior security leadership into the room.</h2><p className="mt-6 max-w-2xl text-lg leading-8 text-white/65">Let's discuss how vCISO services can align cybersecurity with business objectives and build a security program that can be trusted.</p><div className="mt-8 text-sm text-white/65">vlk-infosec.com</div></div>
           </div>
         </section>
       </main>
@@ -312,8 +483,8 @@ export default function Home() {
             <img src={brand.logo} alt="VLK InfoSec Shield Logo" className="h-14 w-14 rounded-full border border-[#d4a574]/50 object-cover shadow-md" />
             <div><p className="font-brand font-bold text-[#fbf8ef]">VLK InfoSec Consulting</p><p className="mt-1 text-sm text-white/45">Strategic CISO leadership · Risk assessment · GRC · Compliance.</p></div>
           </div>
-          <div><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2d39b]">Navigate</p><div className="mt-4 grid gap-2 text-sm text-white/55"><a href="#services" className="hover:text-white">Services</a><a href="#competencies" className="hover:text-white">Competencies</a><a href="#functions" className="hover:text-white">Direction · Structure · Assurance</a></div></div>
-          <div><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2d39b]">Contact</p><div className="mt-4 grid gap-2 text-sm text-white/55"><a href={contactLinks.contact} className="hover:text-white">Ask a question</a><a href="https://vlk-infosec.com" className="hover:text-white">vlk-infosec.com</a><span>Privacy · Terms</span></div></div>
+          <div><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2d39b]">Navigate</p><div className="mt-4 grid gap-2 text-sm text-white/55"><a href="#about" className="hover:text-white">About</a><a href="#services" className="hover:text-white">Services</a><a href="#executive-insights" className="hover:text-white">Executive Insights</a><a href="#competencies" className="hover:text-white">Competencies</a><a href="#functions" className="hover:text-white">Direction · Structure · Assurance</a></div></div>
+          <div><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2d39b]">Contact</p><div className="mt-4 grid gap-2 text-sm text-white/55"><a href="https://vlk-infosec.com" className="hover:text-white">vlk-infosec.com</a><span>Privacy · Terms</span></div></div>
         </div>
         <div className="container mt-10 border-t border-white/10 pt-6 text-xs text-white/35">© 2026 VLK InfoSec Consulting. All rights reserved.</div>
       </footer>
