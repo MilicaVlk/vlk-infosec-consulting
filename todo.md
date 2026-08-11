@@ -21,5 +21,5 @@
 - [x] Review repository deployment materials and available account access.
 - [x] Confirm and inspect the target GitHub repository: `MilicaVlk/VLK-InfoSec`.
 - [x] Verify the production build and remove local-only files from the publication set.
-- [ ] Commit and publish the source code to the confirmed GitHub repository.
-- [ ] Provide the user with the Cloudflare Pages settings; the user will complete the connection.
+- [x] Commit and publish the source code to the confirmed GitHub repository.
+- [x] Provide the user with the Cloudflare Pages settings; the user will complete the connection.
