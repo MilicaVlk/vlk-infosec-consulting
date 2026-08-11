@@ -9,3 +9,17 @@
 - [x] Ukloniti generisane ilustracije i koristiti odobrene elemente: talasaste forme, mrežne linije, zlatne okvire i geometriju Direction · Structure · Assurance.
 - [x] Proveriti desktop i mobilni prikaz nakon izmene.
 - [ ] Sačuvati novu checkpoint verziju tek nakon korisničke potvrde brand materijala.
+
+## GitHub connector verification
+
+- [x] Verify GitHub connector configuration and access.
+- [x] Retrieve a small non-sensitive example from GitHub.
+- [x] Summarize the connector capabilities and results for the user.
+
+## GitHub and Cloudflare Pages deployment
+
+- [x] Review repository deployment materials and available account access.
+- [x] Confirm and inspect the target GitHub repository: `MilicaVlk/VLK-InfoSec`.
+- [x] Verify the production build and remove local-only files from the publication set.
+- [ ] Commit and publish the source code to the confirmed GitHub repository.
+- [ ] Provide the user with the Cloudflare Pages settings; the user will complete the connection.
