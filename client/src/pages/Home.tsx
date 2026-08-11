@@ -23,6 +23,13 @@ const brand = {
   gold: "#d4a574",
 };
 
+const contactLinks = {
+  info: "mailto:info@vlk-infosec.com",
+  contact: "mailto:contact@vlk-infosec.com",
+  vciso: "mailto:vciso.services@vlk-infosec.com",
+  grc: "mailto:grc@vlk-infosec.com",
+};
+
 const services = [
   {
     index: "01",
@@ -166,7 +173,7 @@ export default function Home() {
             <a href="#functions" className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-white/65 hover:text-[#f2d39b]">Functions</a>
             <a href="#contact" className="border-l border-[#d4a574]/35 pl-7 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[#f2d39b] hover:text-white">Contact</a>
           </nav>
-          <a href="mailto:milica@vlk-infosec.com" className="hidden border border-[#d4a574]/60 px-4 py-2 text-[0.64rem] font-bold uppercase tracking-[0.16em] text-[#f2d39b] hover:bg-[#d4a574] hover:text-[#000030] sm:inline-flex">milica@vlk-infosec.com</a>
+          <a href={contactLinks.contact} aria-label="Open general contact email" className="hidden border border-[#d4a574]/60 px-4 py-2 text-[0.64rem] font-bold uppercase tracking-[0.16em] text-[#f2d39b] hover:bg-[#d4a574] hover:text-[#000030] sm:inline-flex">Ask a question <ArrowUpRight className="ml-2 h-4 w-4" /></a>
         </div>
       </header>
 
@@ -179,8 +186,8 @@ export default function Home() {
               <h1 className="display-heading mt-7 text-5xl leading-[0.98] text-[#fbf8ef] sm:text-6xl lg:text-[5.4rem]">Strategic security leadership for a changing world.</h1>
               <p className="mt-8 max-w-lg text-lg leading-8 text-white/70">Virtual CISO services that connect cybersecurity direction with business reality, governance and measurable assurance.</p>
               <div className="mt-10 flex flex-wrap gap-4">
-                <a href="#functions" className="inline-flex items-center gap-3 bg-[#d4a574] px-6 py-4 text-sm font-bold text-[#000030] hover:-translate-y-1 hover:bg-[#f2d39b] hover:shadow-[0_12px_32px_rgba(212,165,116,0.24)]">Explore Direction · Structure · Assurance <ArrowRight className="h-4 w-4" /></a>
-                <a href="mailto:milica@vlk-infosec.com" className="inline-flex items-center gap-3 border border-[#d4a574]/60 px-6 py-4 text-sm font-bold text-[#f2d39b] hover:border-[#f2d39b] hover:bg-white/5">Contact VLK <ArrowUpRight className="h-4 w-4" /></a>
+                <a href={contactLinks.info} className="inline-flex items-center gap-3 bg-[#d4a574] px-6 py-4 text-sm font-bold text-[#000030] hover:-translate-y-1 hover:bg-[#f2d39b] hover:shadow-[0_12px_32px_rgba(212,165,116,0.24)]">Learn more <ArrowRight className="h-4 w-4" /></a>
+                <a href={contactLinks.contact} className="inline-flex items-center gap-3 border border-[#d4a574]/60 px-6 py-4 text-sm font-bold text-[#f2d39b] hover:border-[#f2d39b] hover:bg-white/5">Ask a question <ArrowUpRight className="h-4 w-4" /></a>
               </div>
               <div className="mt-12 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.16em] text-white/45"><span className="h-2 w-2 rounded-full bg-[#e02060] shadow-[0_0_12px_#e02060]" />vlk-infosec.com</div>
             </div>
@@ -204,7 +211,7 @@ export default function Home() {
                 <SectionLabel number="01">WHAT A vCISO DOES</SectionLabel>
                 <h2 className="display-heading mt-7 max-w-md text-4xl leading-[1.02] sm:text-5xl">Security becomes manageable when someone owns the whole picture.</h2>
                 <p className="mt-7 max-w-sm leading-7 text-white/60">A vCISO brings executive-level focus to strategy, risk and compliance while creating the structure needed for security to become repeatable and measurable.</p>
-                <div className="mt-10 flex items-center gap-4"><div className="h-px w-20 bg-gradient-to-r from-[#d4a574] to-transparent" /><Network className="h-5 w-5 text-[#d4a574]" /><span className="text-xs uppercase tracking-[0.18em] text-white/45">Business-aligned security</span></div>
+                <a href={contactLinks.vciso} className="mt-10 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.18em] text-[#f2d39b] hover:text-white"><Network className="h-5 w-5 text-[#d4a574]" />Learn more about vCISO services <ArrowUpRight className="h-4 w-4" /></a>
               </div>
               <div className="grid gap-4">
                 {services.map((service) => {
@@ -254,6 +261,7 @@ export default function Home() {
               <h2 className="display-heading mt-7 max-w-md text-4xl leading-[1.02] sm:text-5xl">Direction. Structure. Assurance.</h2>
               <p className="mt-7 max-w-sm leading-7 text-white/65">Not by doing every technical task personally—but by ensuring the right security work is prioritized, performed and measured.</p>
               <div className="mt-10"><TriangleMotif /></div>
+              <a href={contactLinks.grc} className="mt-8 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.18em] text-[#f2d39b] hover:text-white">Learn more about GRC <ArrowUpRight className="h-4 w-4" /></a>
             </div>
             <div className="grid gap-4">
               {functions.map((item) => (
@@ -292,8 +300,8 @@ export default function Home() {
 
         <section id="contact" className="vlk-wave-surface relative overflow-hidden border-t border-[#d4a574]/30 py-24 lg:py-28">
           <div className="container relative z-10 grid items-end gap-10 md:grid-cols-[1fr_auto]">
-            <div><SectionLabel number="06">CONVERSATION</SectionLabel><h2 className="display-heading mt-7 max-w-3xl text-4xl leading-[1.02] sm:text-5xl">Bring senior security leadership into the room.</h2><p className="mt-6 max-w-2xl text-lg leading-8 text-white/65">Let's discuss how vCISO services can align cybersecurity with business objectives and build a security program that can be trusted.</p><div className="mt-8 flex flex-wrap gap-5 text-sm text-white/65"><span>vlk-infosec.com</span><span className="text-[#d4a574]">·</span><a href="mailto:milica@vlk-infosec.com" className="text-[#f2d39b] hover:text-white">milica@vlk-infosec.com</a></div></div>
-            <a href="mailto:milica@vlk-infosec.com" className="inline-flex items-center justify-center gap-3 bg-[#d4a574] px-7 py-4 text-sm font-bold text-[#000030] hover:-translate-y-1 hover:bg-[#f2d39b] hover:shadow-[0_12px_32px_rgba(212,165,116,0.24)]">Start a conversation <ArrowUpRight className="h-4 w-4" /></a>
+            <div><SectionLabel number="06">CONVERSATION</SectionLabel><h2 className="display-heading mt-7 max-w-3xl text-4xl leading-[1.02] sm:text-5xl">Bring senior security leadership into the room.</h2><p className="mt-6 max-w-2xl text-lg leading-8 text-white/65">Let's discuss how vCISO services can align cybersecurity with business objectives and build a security program that can be trusted.</p><div className="mt-8 flex flex-wrap gap-5 text-sm text-white/65"><span>vlk-infosec.com</span><span className="text-[#d4a574]">·</span><a href={contactLinks.contact} className="text-[#f2d39b] hover:text-white">Ask a question</a></div></div>
+            <a href={contactLinks.contact} className="inline-flex items-center justify-center gap-3 bg-[#d4a574] px-7 py-4 text-sm font-bold text-[#000030] hover:-translate-y-1 hover:bg-[#f2d39b] hover:shadow-[0_12px_32px_rgba(212,165,116,0.24)]">Ask a question <ArrowUpRight className="h-4 w-4" /></a>
           </div>
         </section>
       </main>
@@ -305,7 +313,7 @@ export default function Home() {
             <div><p className="font-brand font-bold text-[#fbf8ef]">VLK InfoSec Consulting</p><p className="mt-1 text-sm text-white/45">Strategic CISO leadership · Risk assessment · GRC · Compliance.</p></div>
           </div>
           <div><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2d39b]">Navigate</p><div className="mt-4 grid gap-2 text-sm text-white/55"><a href="#services" className="hover:text-white">Services</a><a href="#competencies" className="hover:text-white">Competencies</a><a href="#functions" className="hover:text-white">Direction · Structure · Assurance</a></div></div>
-          <div><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2d39b]">Contact</p><div className="mt-4 grid gap-2 text-sm text-white/55"><a href="mailto:milica@vlk-infosec.com" className="hover:text-white">milica@vlk-infosec.com</a><a href="https://vlk-infosec.com" className="hover:text-white">vlk-infosec.com</a><span>Privacy · Terms</span></div></div>
+          <div><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2d39b]">Contact</p><div className="mt-4 grid gap-2 text-sm text-white/55"><a href={contactLinks.contact} className="hover:text-white">Ask a question</a><a href="https://vlk-infosec.com" className="hover:text-white">vlk-infosec.com</a><span>Privacy · Terms</span></div></div>
         </div>
         <div className="container mt-10 border-t border-white/10 pt-6 text-xs text-white/35">© 2026 VLK InfoSec Consulting. All rights reserved.</div>
       </footer>
