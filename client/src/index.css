@@ -217,6 +217,15 @@ a:focus-visible {
   width: min(100%, 230px);
 }
 
+.vlk-triangle-reference {
+  display: block;
+  width: min(100%, 300px);
+  height: auto;
+  border: 1px solid rgba(212, 165, 116, 0.52);
+  border-radius: 0.75rem;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.32), 0 0 0 4px rgba(0, 0, 48, 0.16);
+}
+
 .vlk-logo-signature {
   display: flex;
   align-items: center;
@@ -360,6 +369,10 @@ a:focus-visible {
 
   .vlk-footer-lockup {
     width: min(100%, 210px);
+  }
+
+  .vlk-triangle-reference {
+    width: min(100%, 270px);
   }
 
   .vlk-logo-signature {
