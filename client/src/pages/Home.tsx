@@ -184,9 +184,9 @@ function HeroBrandMark() {
   );
 }
 
-function TriangleMotif({ compact = false }: { compact?: boolean }) {
+function TriangleMotif() {
   return (
-    <div className={compact ? "w-44" : "w-full max-w-[350px]"} aria-label="Direction, Structure and Assurance triangle motif">
+    <div className="w-full max-w-[280px]" aria-label="Direction, Structure and Assurance triangle motif">
       <svg viewBox="0 0 360 300" role="img" className="h-auto w-full">
         <defs>
           <linearGradient id="vlkTriangleGold" x1="0" x2="1" y1="0" y2="1">
@@ -195,18 +195,14 @@ function TriangleMotif({ compact = false }: { compact?: boolean }) {
             <stop offset="1" stopColor="#95632e" />
           </linearGradient>
         </defs>
-        <path d="M180 28 312 246H48L180 28Z" fill="none" stroke="url(#vlkTriangleGold)" strokeWidth="3" />
-        <path d="M180 56 279 220H81L180 56Z" fill="none" stroke="#d4a574" strokeOpacity="0.32" strokeWidth="1" />
-        <circle cx="180" cy="28" r="4" fill="#f2d39b" />
-        <circle cx="48" cy="246" r="4" fill="#f2d39b" />
-        <circle cx="312" cy="246" r="4" fill="#f2d39b" />
-        {!compact && (
-          <>
-            <text x="180" y="18" textAnchor="middle" fill="#f2d39b" fontSize="12" fontWeight="700" letterSpacing="2">DIRECTION</text>
-            <text x="44" y="272" textAnchor="middle" fill="#f2d39b" fontSize="12" fontWeight="700" letterSpacing="2">ASSURANCE</text>
-            <text x="316" y="272" textAnchor="middle" fill="#f2d39b" fontSize="12" fontWeight="700" letterSpacing="2">STRUCTURE</text>
-          </>
-        )}
+        <path d="M180 36 286 226H74L180 36Z" fill="none" stroke="url(#vlkTriangleGold)" strokeWidth="4" strokeLinejoin="round" />
+        <path d="M180 62 255 204H105L180 62Z" fill="none" stroke="#d4a574" strokeOpacity="0.24" strokeWidth="1.25" />
+        <circle cx="180" cy="36" r="3.5" fill="#f2d39b" />
+        <circle cx="74" cy="226" r="3.5" fill="#f2d39b" />
+        <circle cx="286" cy="226" r="3.5" fill="#f2d39b" />
+        <text x="180" y="24" textAnchor="middle" fill="#f2d39b" fontSize="11" fontWeight="700" letterSpacing="1.8">STRUCTURE</text>
+        <text x="109" y="151" textAnchor="middle" fill="#f2d39b" fontSize="11" fontWeight="700" letterSpacing="1.6" transform="rotate(-59 109 151)">DIRECTION</text>
+        <text x="251" y="151" textAnchor="middle" fill="#f2d39b" fontSize="11" fontWeight="700" letterSpacing="1.6" transform="rotate(59 251 151)">ASSURANCE</text>
       </svg>
     </div>
   );
@@ -381,7 +377,6 @@ export default function Home() {
               <SectionLabel number="02">CORE COMPETENCIES</SectionLabel>
               <h2 className="display-heading mt-7 max-w-md">Technical credibility. Business judgment. Clear communication.</h2>
               <p className="mt-7 max-w-sm leading-7 text-white/65">Trust is built quickly when security advice is deep enough for technical teams and clear enough for leadership.</p>
-              <div className="mt-12 flex items-center gap-8"><TriangleMotif compact /><div className="h-28 w-px bg-gradient-to-b from-[#d4a574] to-transparent" /></div>
             </div>
             <div className="vlk-frame overflow-hidden">
               <div className="grid divide-y divide-[#d4a574]/20">

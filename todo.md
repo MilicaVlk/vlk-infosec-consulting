@@ -56,3 +56,10 @@
 
 - [ ] Restore the explicit six-year TeleGroup experience statement in the founder section.
 - [ ] Verify the focused copy change, build, and publish without altering the approved design.
+
+## Direction · Structure · Assurance graphic revision
+
+- [x] Audit the current triangle and adjacent vertical linework.
+- [x] Place Direction bottom-left, Structure top, and Assurance bottom-right.
+- [x] Reduce the triangle size, slightly thicken the line, and keep labels readable along the edges.
+- [x] Verify, build, and publish the focused graphic revision.
