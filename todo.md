@@ -38,3 +38,16 @@
 - [x] Reduce the hero logo footprint and restore a clear service-first hierarchy.
 - [x] Verify header, hero and mobile spacing after the revision.
 - [x] Run typecheck and production build, then save a revised checkpoint.
+
+## Privacy and Terms clarification
+
+- [ ] Verify the latest UX commit and live deployment status.
+- [ ] Confirm whether Privacy and Terms are currently informational footer labels or linked policy pages.
+- [ ] Explain the minimum content needed before publishing formal policy pages.
+
+## Closing section and CTA enhancement
+
+- [ ] Redesign the final "Conversation" section into a prominent closing banner.
+- [ ] Add the large CTA button: "Explore vCISO service packages that fit your business needs".
+- [ ] Link the CTA to `vciso.services@vlk-infosec.com`.
+- [ ] Verify the final layout, build, and deploy.

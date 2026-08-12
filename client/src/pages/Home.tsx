@@ -495,9 +495,27 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" className="vlk-wave-surface relative overflow-hidden border-t border-[#d4a574]/30 py-24 lg:py-28">
-          <div className="container relative z-10 grid items-end gap-10 md:grid-cols-[1fr_auto]">
-            <div><SectionLabel number="06">CONVERSATION</SectionLabel><h2 className="display-heading mt-7 max-w-3xl">Bring senior security leadership into the room.</h2><p className="vlk-section-copy mt-6 max-w-2xl">Let's discuss how vCISO services can align cybersecurity with business objectives and build a security program that can be trusted.</p><div className="mt-8 text-sm text-white/65">vlk-infosec.com</div></div>
+        <section id="contact" className="vlk-wave-surface relative overflow-hidden border-t border-[#d4a574]/30 py-28 lg:py-36">
+          <NetworkOrnament />
+          <div className="container relative z-10 max-w-4xl text-center">
+            <div className="flex justify-center"><SectionLabel number="06">CONVERSATION & ENGAGEMENT</SectionLabel></div>
+            <h2 className="display-heading mt-7 text-3xl sm:text-4xl lg:text-5xl text-[#fbf8ef]">Bring senior security leadership into the room.</h2>
+            <p className="vlk-section-copy mx-auto mt-6 max-w-2xl">Let's discuss how vCISO services can align cybersecurity with business objectives, bridge the gap between technical teams and executive leadership, and build a security program that can be trusted.</p>
+            <div className="mt-12 rounded-2xl border border-[#d4a574]/40 bg-[#07073b]/80 p-8 shadow-2xl backdrop-blur-xl sm:p-12">
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#f2d39b]">Tailored Advisory</p>
+              <h3 className="display-heading mt-3 text-2xl sm:text-3xl text-white">Explore vCISO service packages that fit your business needs.</h3>
+              <p className="mt-4 text-white/70 max-w-xl mx-auto">Whether you need ongoing strategic guidance, risk assessment rigor, or comprehensive GRC alignment, let's shape a framework suited for your organization.</p>
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+                <a href="mailto:vciso.services@vlk-infosec.com" className="inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-[#d4a574] via-[#f2d39b] to-[#c68b47] px-8 py-4 text-sm font-bold uppercase tracking-[0.15em] text-[#000030] shadow-lg transition-transform hover:scale-[1.02] active:scale-[0.98]">
+                  <span>Explore vCISO Services</span>
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
+                <a href="mailto:contact@vlk-infosec.com" className="inline-flex items-center gap-3 rounded-xl border border-[#d4a574]/40 bg-[#000030]/60 px-8 py-4 text-sm font-bold uppercase tracking-[0.15em] text-white transition-colors hover:border-[#d4a574] hover:bg-[#000030]">
+                  <span>General Inquiry</span>
+                </a>
+              </div>
+              <div className="mt-6 text-xs text-white/45">vlk-infosec.com · milica@vlk-infosec.com</div>
+            </div>
           </div>
         </section>
       </main>
