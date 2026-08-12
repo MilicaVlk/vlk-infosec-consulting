@@ -23,3 +23,11 @@
 - [x] Verify the production build and remove local-only files from the publication set.
 - [x] Commit and publish the source code to the confirmed GitHub repository.
 - [x] Provide the user with the Cloudflare Pages settings; the user will complete the connection.
+
+## Final publication checklist
+
+- [ ] Verify the approved local build and responsive output.
+- [ ] Synchronize the final source files into the GitHub repository clone.
+- [ ] Commit and push the final changes to `main`.
+- [ ] Verify Cloudflare Pages deployment and the live custom domain.
+- [ ] Deliver the live URL and published project version.

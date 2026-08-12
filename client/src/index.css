@@ -171,6 +171,18 @@ a:focus-visible {
   background-image: linear-gradient(rgba(212, 165, 116, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(212, 165, 116, 0.1) 1px, transparent 1px);
   background-size: 72px 72px;
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vlk-wordmark {
+  display: inline-block;
+  color: var(--vlk-white);
+  font-family: var(--font-brand);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  line-height: 1.15;
+  text-transform: none;
 }
 
 .vlk-wave-surface {
@@ -179,6 +191,8 @@ a:focus-visible {
     radial-gradient(60% 90% at 83% 25%, rgba(208, 16, 96, 0.42), transparent 64%),
     radial-gradient(60% 90% at 50% 110%, rgba(96, 0, 192, 0.4), transparent 60%),
     linear-gradient(125deg, #000030 0%, #050518 42%, #300050 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .vlk-wave-surface::before {
@@ -190,6 +204,8 @@ a:focus-visible {
   background:
     linear-gradient(153deg, transparent 0 28%, rgba(0, 80, 208, 0.36) 30%, rgba(208, 16, 96, 0.3) 37%, transparent 42%),
     linear-gradient(28deg, transparent 0 46%, rgba(96, 0, 192, 0.28) 49%, rgba(224, 32, 96, 0.22) 57%, transparent 63%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   filter: blur(16px);
 }
 
@@ -262,6 +278,22 @@ a:focus-visible {
 
 @media (max-width: 639px) {
   .vlk-grid {
-    background-size: 48px 48px;
+    background-image: none;
+  }
+
+  .vlk-wave-surface::before {
+    opacity: 0.2;
+    filter: blur(28px);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .vlk-wave-surface > svg {
+    opacity: 0.14 !important;
+  }
+
+  .vlk-wordmark {
+    font-size: 0.95rem;
+    letter-spacing: 0.025em;
   }
 }
