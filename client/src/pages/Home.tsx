@@ -268,6 +268,14 @@ export default function Home() {
               <div className="vlk-frame border-l-4 border-l-[#d4a574] p-6 text-sm italic text-white/80">
                 "What changed was the perspective—from securing individual technologies and services to looking at security as an organizational capability that enables business growth."
               </div>
+              <div className="flex flex-wrap gap-3" aria-label="Professional LinkedIn profiles">
+                <a href="https://www.linkedin.com/in/milicavlk" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-[#d4a574]/35 bg-[#000030]/55 px-4 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#f2d39b] transition-colors hover:border-[#d4a574] hover:bg-[#000030]">
+                  LinkedIn · Milica Vlk <ArrowUpRight className="h-3.5 w-3.5" />
+                </a>
+                <a href="https://www.linkedin.com/company/vlk-infosec-consulting/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-lg border border-[#d4a574]/35 bg-[#000030]/55 px-4 py-3 text-xs font-bold uppercase tracking-[0.12em] text-[#f2d39b] transition-colors hover:border-[#d4a574] hover:bg-[#000030]">
+                  LinkedIn · VLK InfoSec Consulting <ArrowUpRight className="h-3.5 w-3.5" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -497,7 +505,7 @@ export default function Home() {
             <img className="vlk-footer-lockup" src={brand.lockup} alt="VLK InfoSec Consulting shield, wordmark and vCISO descriptor" />
           </div>
           <div><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2d39b]">Navigate</p><div className="mt-4 grid gap-2 text-sm text-white/55"><a href="#about" className="hover:text-white">About</a><a href="#services" className="hover:text-white">Services</a><a href="#executive-insights" className="hover:text-white">Executive Insights</a><a href="#competencies" className="hover:text-white">Competencies</a><a href="#functions" className="hover:text-white">Direction · Structure · Assurance</a></div></div>
-          <div><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2d39b]">Contact</p><div className="mt-4 grid gap-2 text-sm text-white/55"><a href="https://vlk-infosec.com" className="hover:text-white">vlk-infosec.com</a><span>Privacy · Terms</span></div></div>
+          <div><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2d39b]">Contact</p><div className="mt-4 grid gap-2 text-sm text-white/55"><a href="https://vlk-infosec.com" className="hover:text-white">vlk-infosec.com</a><a href="https://www.linkedin.com/in/milicavlk" target="_blank" rel="noreferrer" className="hover:text-white">LinkedIn · Milica Vlk</a><a href="https://www.linkedin.com/company/vlk-infosec-consulting/" target="_blank" rel="noreferrer" className="hover:text-white">LinkedIn · VLK InfoSec Consulting</a><span>Privacy · Terms</span></div></div>
         </div>
         <div className="container mt-10 border-t border-white/10 pt-6 text-xs text-white/35">© 2026 VLK InfoSec Consulting. All rights reserved.</div>
       </footer>

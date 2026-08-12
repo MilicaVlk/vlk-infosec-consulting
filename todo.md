@@ -118,3 +118,9 @@
 - [x] Confirm which external image paths fail on the live custom domain.
 - [x] Move the supplied lockup and triangle images into deployable public CDN asset paths.
 - [x] Update references, rebuild, push, and verify no broken-image or alt-text rendering remains.
+
+## LinkedIn profile and Company Page links
+
+- [x] Add the personal LinkedIn profile link in the About the Founder section.
+- [x] Add the VLK InfoSec Consulting Company Page link in the About section and footer.
+- [x] Verify accessible labels, external-link behavior, and responsive layout before publishing.
