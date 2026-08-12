@@ -26,8 +26,15 @@
 
 ## Final publication checklist
 
-- [ ] Verify the approved local build and responsive output.
-- [ ] Synchronize the final source files into the GitHub repository clone.
-- [ ] Commit and push the final changes to `main`.
-- [ ] Verify Cloudflare Pages deployment and the live custom domain.
-- [ ] Deliver the live URL and published project version.
+- [x] Verify the approved local build and responsive output.
+- [x] Synchronize the final source files into the GitHub repository clone.
+- [x] Commit and push the final changes to `main`.
+- [x] Verify Cloudflare Pages deployment and the live custom domain.
+- [x] Deliver the live URL and published project version.
+
+## Logo scale and UX hierarchy revision
+
+- [x] Audit the current shield/logo scale on desktop and mobile.
+- [x] Reduce the hero logo footprint and restore a clear service-first hierarchy.
+- [x] Verify header, hero and mobile spacing after the revision.
+- [x] Run typecheck and production build, then save a revised checkpoint.

@@ -167,7 +167,7 @@ function SectionLabel({ number, children }: { number: string; children: string }
 function BrandSignature({ children }: { children: string }) {
   return (
     <div className="vlk-logo-signature mt-6">
-      <img src={brand.logo} alt="" aria-hidden="true" />
+      <img className="vlk-signature-logo" src={brand.logo} alt="" aria-hidden="true" />
       <span>{children}</span>
     </div>
   );
@@ -176,7 +176,9 @@ function BrandSignature({ children }: { children: string }) {
 function HeroBrandMark() {
   return (
     <div className="vlk-hero-mark" aria-label="VLK InfoSec Consulting">
-      <img src={brand.logo} alt="VLK InfoSec Consulting shield logo" />
+      <div className="vlk-hero-logo-frame">
+        <img src={brand.logo} alt="VLK InfoSec Consulting shield logo" />
+      </div>
       <span className="vlk-wordmark">VLK InfoSec Consulting</span>
     </div>
   );
@@ -230,7 +232,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 border-b border-[#d4a574]/25 bg-[#000030]/95 backdrop-blur-xl">
         <div className="container flex min-h-[78px] items-center justify-between gap-8">
           <a href="#top" aria-label="VLK InfoSec Consulting home" className="group flex items-center gap-3">
-            <img src={brand.logo} alt="VLK InfoSec Consulting shield logo" className="h-14 w-14 shrink-0 rounded-full border border-[#d4a574]/50 object-cover shadow-md sm:h-16 sm:w-16" />
+            <img src={brand.logo} alt="VLK InfoSec Consulting shield logo" className="h-12 w-12 shrink-0 rounded-full border border-[#d4a574]/50 object-cover shadow-md sm:h-14 sm:w-14" />
             <span className="vlk-wordmark">VLK InfoSec Consulting</span>
           </a>
           <nav className="hidden items-center gap-7 md:flex" aria-label="Primary navigation">
@@ -246,11 +248,11 @@ export default function Home() {
       <main id="top">
         <section className="vlk-wave-surface vlk-grid relative isolate overflow-hidden border-b border-[#d4a574]/30">
           <NetworkOrnament />
-          <div className="container relative z-10 flex min-h-[560px] items-center justify-center py-24 lg:min-h-[700px] lg:py-28">
+            <div className="container relative z-10 flex min-h-[500px] items-center justify-center py-20 lg:min-h-[620px] lg:py-24">
             <div className="max-w-4xl text-center">
               <HeroBrandMark />
               <div className="flex justify-center"><SectionLabel number="00">vCISO · RISK ASSESSMENT · GRC · COMPLIANCE</SectionLabel></div>
-              <h1 className="display-heading mt-7 max-w-[18ch] text-center text-[#fbf8ef]">Strategic security leadership for a changing world.</h1>
+              <h1 className="display-heading mt-6 max-w-[18ch] text-center text-4xl leading-[1.02] text-[#fbf8ef] sm:text-5xl lg:mt-7 lg:text-7xl">Strategic security leadership for a changing world.</h1>
               <p className="vlk-section-copy mx-auto mt-8 max-w-lg">Virtual CISO services that connect cybersecurity direction with business reality, governance and measurable assurance.</p>
               <div className="mt-12 flex items-center justify-center gap-3 text-xs font-bold uppercase tracking-[0.16em] text-white/45"><span className="h-2 w-2 rounded-full bg-[#e02060] shadow-[0_0_12px_#e02060]" />vlk-infosec.com</div>
             </div>
@@ -503,7 +505,7 @@ export default function Home() {
       <footer className="border-t border-[#d4a574]/20 bg-[#000020] py-12">
         <div className="container grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
           <div className="flex items-center gap-4">
-            <img src={brand.logo} alt="VLK InfoSec Consulting shield logo" className="h-14 w-14 rounded-full border border-[#d4a574]/50 object-cover shadow-md" />
+            <img src={brand.logo} alt="VLK InfoSec Consulting shield logo" className="h-12 w-12 rounded-full border border-[#d4a574]/50 object-cover shadow-md" />
             <div><p className="vlk-wordmark">VLK InfoSec Consulting</p><p className="mt-1 text-sm text-white/45">Strategic CISO leadership · Risk assessment · GRC · Compliance.</p></div>
           </div>
           <div><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2d39b]">Navigate</p><div className="mt-4 grid gap-2 text-sm text-white/55"><a href="#about" className="hover:text-white">About</a><a href="#services" className="hover:text-white">Services</a><a href="#executive-insights" className="hover:text-white">Executive Insights</a><a href="#competencies" className="hover:text-white">Competencies</a><a href="#functions" className="hover:text-white">Direction · Structure · Assurance</a></div></div>
