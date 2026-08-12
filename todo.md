@@ -51,3 +51,8 @@
 - [ ] Add the large CTA button: "Explore vCISO service packages that fit your business needs".
 - [ ] Link the CTA to `vciso.services@vlk-infosec.com`.
 - [ ] Verify the final layout, build, and deploy.
+
+## TeleGroup experience detail
+
+- [ ] Restore the explicit six-year TeleGroup experience statement in the founder section.
+- [ ] Verify the focused copy change, build, and publish without altering the approved design.

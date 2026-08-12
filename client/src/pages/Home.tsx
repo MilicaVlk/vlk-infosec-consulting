@@ -288,7 +288,7 @@ export default function Home() {
                     <span className="font-bold text-[#f2d39b]">11 Years at Telekom Srbija:</span> IPTV & Headend, VOD & nPVR, access networks, mobile radio optimization (GSM/UMTS/LTE), systems integration, and high-availability operations.
                   </div>
                   <div className="border-b border-[#d4a574]/15 pb-3">
-                    <span className="font-bold text-[#f2d39b]">Cybersecurity & Leadership:</span> Security engineering, program management, risk assessment, governance frameworks, and technical team mentoring at TeleGroup.
+                    <span className="font-bold text-[#f2d39b]">6 Years at TeleGroup (Cybersecurity & Leadership):</span> Security engineering, program management, risk assessment, governance frameworks, and technical team mentoring.
                   </div>
                   <div>
                     <span className="font-bold text-[#f2d39b]">Professional Development:</span> CISSP (ISC2, in progress) & CEH v13 (EC-Council, in progress).
