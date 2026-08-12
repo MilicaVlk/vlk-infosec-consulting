@@ -69,3 +69,10 @@
 - [x] Rewrite the About the Founder section in professional third-person voice while keeping one personal quote.
 - [x] Redesign the SVG triangle to be smaller, visibly thicker, with clockwise labels (Direction → Structure → Assurance) following the edges.
 - [x] Verify, build, and publish the final website updates.
+
+## 3D triangle and vCISO wording revision
+
+- [x] Audit current triangle SVG text placement and all Strategic CISO Leadership occurrences.
+- [x] Make the gold triangle thicker with a restrained 3D depth effect and larger labels parallel to each edge.
+- [x] Replace applicable Strategic CISO Leadership wording with vCISO.
+- [x] Verify, build, and publish the revision.

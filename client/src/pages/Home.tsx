@@ -186,23 +186,34 @@ function HeroBrandMark() {
 
 function TriangleMotif() {
   return (
-    <div className="w-full max-w-[220px] mx-auto" aria-label="Direction, Structure and Assurance triangle motif">
-      <svg viewBox="0 0 360 300" role="img" className="h-auto w-full">
+    <div className="w-full max-w-[250px] mx-auto" aria-label="Direction, Structure and Assurance triangle motif">
+      <svg viewBox="0 0 380 320" role="img" className="h-auto w-full drop-shadow-[0_12px_24px_rgba(212,165,116,0.25)]">
         <defs>
-          <linearGradient id="vlkTriangleGold" x1="0" x2="1" y1="0" y2="1">
-            <stop offset="0" stopColor="#f2d39b" />
-            <stop offset="0.45" stopColor="#d4a574" />
-            <stop offset="1" stopColor="#95632e" />
+          <linearGradient id="vlkTriangleGold3D" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0" stopColor="#fff2cc" />
+            <stop offset="0.35" stopColor="#f2d39b" />
+            <stop offset="0.7" stopColor="#c68b47" />
+            <stop offset="1" stopColor="#7a4d1b" />
+          </linearGradient>
+          <linearGradient id="vlkTriangleShadow" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0" stopColor="#553311" />
+            <stop offset="1" stopColor="#221105" />
           </linearGradient>
         </defs>
-        <path d="M180 42 278 218H82L180 42Z" fill="none" stroke="url(#vlkTriangleGold)" strokeWidth="5.5" strokeLinejoin="round" />
-        <path d="M180 72 242 190H118L180 72Z" fill="none" stroke="#d4a574" strokeOpacity="0.28" strokeWidth="1.5" />
-        <circle cx="180" cy="42" r="4.5" fill="#f2d39b" />
-        <circle cx="82" cy="218" r="4.5" fill="#f2d39b" />
-        <circle cx="278" cy="218" r="4.5" fill="#f2d39b" />
-        <text x="114" y="145" textAnchor="middle" fill="#f2d39b" fontSize="11" fontWeight="700" letterSpacing="1.8" transform="rotate(58 114 145)">DIRECTION</text>
-        <text x="180" y="28" textAnchor="middle" fill="#f2d39b" fontSize="11" fontWeight="700" letterSpacing="1.8">STRUCTURE</text>
-        <text x="248" y="145" textAnchor="middle" fill="#f2d39b" fontSize="11" fontWeight="700" letterSpacing="1.8" transform="rotate(-58 248 145)">ASSURANCE</text>
+        {/* Subtle 3D extrusion layer */}
+        <path d="M190 48 292 232H88L190 48Z" fill="none" stroke="url(#vlkTriangleShadow)" strokeWidth="12" strokeLinejoin="round" transform="translate(3, 5)" opacity="0.65" />
+        {/* Main thick golden 3D triangle */}
+        <path d="M190 42 288 222H92L190 42Z" fill="none" stroke="url(#vlkTriangleGold3D)" strokeWidth="8" strokeLinejoin="round" />
+        {/* Inner geometric accent */}
+        <path d="M190 74 246 182H134L190 74Z" fill="none" stroke="#f2d39b" strokeOpacity="0.38" strokeWidth="2" />
+        {/* Vertex nodes */}
+        <circle cx="190" cy="42" r="6" fill="#fff" />
+        <circle cx="92" cy="222" r="6" fill="#fff" />
+        <circle cx="288" cy="222" r="6" fill="#fff" />
+        {/* Larger, clear text parallel to each edge */}
+        <text x="122" y="144" textAnchor="middle" fill="#fff" fontSize="13" fontWeight="800" letterSpacing="2.2" transform="rotate(59 122 144)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.8))">DIRECTION</text>
+        <text x="190" y="24" textAnchor="middle" fill="#fff" fontSize="13" fontWeight="800" letterSpacing="2.2" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.8))">STRUCTURE</text>
+        <text x="258" y="144" textAnchor="middle" fill="#fff" fontSize="13" fontWeight="800" letterSpacing="2.2" transform="rotate(-59 258 144)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.8))">ASSURANCE</text>
       </svg>
     </div>
   );
@@ -519,7 +530,7 @@ export default function Home() {
         <div className="container grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
           <div className="flex items-center gap-4">
             <img src={brand.logo} alt="VLK InfoSec Consulting shield logo" className="h-12 w-12 rounded-full border border-[#d4a574]/50 object-cover shadow-md" />
-            <div><p className="vlk-wordmark">VLK InfoSec Consulting</p><p className="mt-1 text-sm text-white/45">Strategic CISO leadership · Risk assessment · GRC · Compliance.</p></div>
+            <div><p className="vlk-wordmark">VLK InfoSec Consulting</p><p className="mt-1 text-sm text-white/45">vCISO · Risk assessment · GRC · Compliance.</p></div>
           </div>
           <div><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2d39b]">Navigate</p><div className="mt-4 grid gap-2 text-sm text-white/55"><a href="#about" className="hover:text-white">About</a><a href="#services" className="hover:text-white">Services</a><a href="#executive-insights" className="hover:text-white">Executive Insights</a><a href="#competencies" className="hover:text-white">Competencies</a><a href="#functions" className="hover:text-white">Direction · Structure · Assurance</a></div></div>
           <div><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2d39b]">Contact</p><div className="mt-4 grid gap-2 text-sm text-white/55"><a href="https://vlk-infosec.com" className="hover:text-white">vlk-infosec.com</a><span>Privacy · Terms</span></div></div>
