@@ -14,6 +14,7 @@ import {
 
 const brand = {
   logo: "/assets/vlk-logo.png",
+  lockup: "/manus-storage/vlk-infosec-lockup_f37dee74.png",
   midnight: "#000030",
   violet: "#6000c0",
   magenta: "#d01060",
@@ -175,46 +176,8 @@ function BrandSignature({ children }: { children: string }) {
 
 function HeroBrandMark() {
   return (
-    <div className="vlk-hero-mark" aria-label="VLK InfoSec Consulting">
-      <div className="vlk-hero-logo-frame">
-        <img src={brand.logo} alt="VLK InfoSec Consulting shield logo" />
-      </div>
-      <span className="vlk-wordmark">VLK InfoSec Consulting</span>
-    </div>
-  );
-}
-
-function TriangleMotif() {
-  return (
-    <div className="w-full max-w-[250px] mx-auto" aria-label="Direction, Structure and Assurance triangle motif">
-      <svg viewBox="0 0 380 320" role="img" className="h-auto w-full drop-shadow-[0_12px_24px_rgba(212,165,116,0.25)]">
-        <defs>
-          <linearGradient id="vlkTriangleGold3D" x1="0" x2="1" y1="0" y2="1">
-            <stop offset="0" stopColor="#fff2cc" />
-            <stop offset="0.35" stopColor="#f2d39b" />
-            <stop offset="0.7" stopColor="#c68b47" />
-            <stop offset="1" stopColor="#7a4d1b" />
-          </linearGradient>
-          <linearGradient id="vlkTriangleShadow" x1="0" x2="1" y1="0" y2="1">
-            <stop offset="0" stopColor="#553311" />
-            <stop offset="1" stopColor="#221105" />
-          </linearGradient>
-        </defs>
-        {/* Subtle 3D extrusion layer */}
-        <path d="M190 48 292 232H88L190 48Z" fill="none" stroke="url(#vlkTriangleShadow)" strokeWidth="12" strokeLinejoin="round" transform="translate(3, 5)" opacity="0.65" />
-        {/* Main thick golden 3D triangle */}
-        <path d="M190 42 288 222H92L190 42Z" fill="none" stroke="url(#vlkTriangleGold3D)" strokeWidth="8" strokeLinejoin="round" />
-        {/* Inner geometric accent */}
-        <path d="M190 74 246 182H134L190 74Z" fill="none" stroke="#f2d39b" strokeOpacity="0.38" strokeWidth="2" />
-        {/* Vertex nodes */}
-        <circle cx="190" cy="42" r="6" fill="#fff" />
-        <circle cx="92" cy="222" r="6" fill="#fff" />
-        <circle cx="288" cy="222" r="6" fill="#fff" />
-        {/* Larger, clear text parallel to each edge */}
-        <text x="122" y="144" textAnchor="middle" fill="#fff" fontSize="13" fontWeight="800" letterSpacing="2.2" transform="rotate(59 122 144)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.8))">DIRECTION</text>
-        <text x="190" y="24" textAnchor="middle" fill="#fff" fontSize="13" fontWeight="800" letterSpacing="2.2" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.8))">STRUCTURE</text>
-        <text x="258" y="144" textAnchor="middle" fill="#fff" fontSize="13" fontWeight="800" letterSpacing="2.2" transform="rotate(-59 258 144)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.8))">ASSURANCE</text>
-      </svg>
+    <div className="vlk-hero-mark" aria-label="VLK InfoSec Consulting visual identity">
+      <img className="vlk-hero-lockup" src={brand.lockup} alt="VLK InfoSec Consulting shield, wordmark and vCISO descriptor" />
     </div>
   );
 }
@@ -240,7 +203,6 @@ export default function Home() {
         <div className="container flex min-h-[78px] items-center justify-between gap-8">
           <a href="#top" aria-label="VLK InfoSec Consulting home" className="group flex items-center gap-3">
             <img src={brand.logo} alt="VLK InfoSec Consulting shield logo" className="h-12 w-12 shrink-0 rounded-full border border-[#d4a574]/50 object-cover shadow-md sm:h-14 sm:w-14" />
-            <span className="vlk-wordmark">VLK InfoSec Consulting</span>
           </a>
           <nav className="hidden items-center gap-7 md:flex" aria-label="Primary navigation">
             <a href="#about" className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-white/65 hover:text-[#f2d39b]">About</a>
@@ -464,7 +426,9 @@ export default function Home() {
               <BrandSignature>VLK operating model</BrandSignature>
               <h2 className="display-heading mt-7 max-w-md">Direction. Structure. Assurance.</h2>
               <p className="mt-7 max-w-sm leading-7 text-white/65">Not by doing every technical task personally—but by ensuring the right security work is prioritized, performed and measured.</p>
-              <div className="mt-10"><TriangleMotif /></div>
+              <div className="mt-10 flex justify-center lg:justify-start">
+                <img className="vlk-functions-lockup" src={brand.lockup} alt="VLK InfoSec Consulting shield, wordmark and vCISO descriptor" />
+              </div>
             </div>
             <div className="grid gap-4">
               {functions.map((item) => (
@@ -529,8 +493,7 @@ export default function Home() {
       <footer className="border-t border-[#d4a574]/20 bg-[#000020] py-12">
         <div className="container grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
           <div className="flex items-center gap-4">
-            <img src={brand.logo} alt="VLK InfoSec Consulting shield logo" className="h-12 w-12 rounded-full border border-[#d4a574]/50 object-cover shadow-md" />
-            <div><p className="vlk-wordmark">VLK InfoSec Consulting</p><p className="mt-1 text-sm text-white/45">vCISO · Risk assessment · GRC · Compliance.</p></div>
+            <img className="vlk-footer-lockup" src={brand.lockup} alt="VLK InfoSec Consulting shield, wordmark and vCISO descriptor" />
           </div>
           <div><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2d39b]">Navigate</p><div className="mt-4 grid gap-2 text-sm text-white/55"><a href="#about" className="hover:text-white">About</a><a href="#services" className="hover:text-white">Services</a><a href="#executive-insights" className="hover:text-white">Executive Insights</a><a href="#competencies" className="hover:text-white">Competencies</a><a href="#functions" className="hover:text-white">Direction · Structure · Assurance</a></div></div>
           <div><p className="text-xs font-bold uppercase tracking-[0.2em] text-[#f2d39b]">Contact</p><div className="mt-4 grid gap-2 text-sm text-white/55"><a href="https://vlk-infosec.com" className="hover:text-white">vlk-infosec.com</a><span>Privacy · Terms</span></div></div>

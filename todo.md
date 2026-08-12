@@ -76,3 +76,27 @@
 - [x] Make the gold triangle thicker with a restrained 3D depth effect and larger labels parallel to each edge.
 - [x] Replace applicable Strategic CISO Leadership wording with vCISO.
 - [x] Verify, build, and publish the revision.
+
+## Reference-matched triangle revision
+
+- [ ] Replace the current 3D/inner triangle with the supplied reference geometry.
+- [ ] Place Direction and Structure parallel to the sloped sides and Assurance horizontally on the base.
+- [ ] Verify the reference-matched result on desktop and mobile, then publish it.
+
+## VLK visual-identity lockup reference
+
+- [x] Treat the supplied shield, VLK InfoSec Consulting wordmark, and vCISO descriptor as the visual-identity reference.
+- [x] Keep the compact shield readable in navigation and use the full lockup where there is sufficient space.
+- [x] Verify that the reference-matched triangle and brand lockup work together on desktop and mobile.
+
+## Correct logo lockup usage
+
+- [x] Replace inaccurate text-based logo variants with the supplied full lockup where space permits.
+- [x] Use the shield icon alone in compact navigation and other constrained areas.
+- [x] Verify the full lockup and icon remain legible and consistent on desktop and mobile.
+
+## Replace triangle with supplied visual identity image
+
+- [x] Remove the triangle motif from the vCISO Functions section.
+- [x] Insert the supplied VLK shield/wordmark image at a controlled responsive size.
+- [x] Verify desktop/mobile legibility and publish the image-based revision.
