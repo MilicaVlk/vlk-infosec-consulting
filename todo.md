@@ -100,3 +100,21 @@
 - [x] Remove the triangle motif from the vCISO Functions section.
 - [x] Insert the supplied VLK shield/wordmark image at a controlled responsive size.
 - [x] Verify desktop/mobile legibility and publish the image-based revision.
+
+## Restore supplied triangle reference image
+
+- [x] Use the supplied triangle image as the graphic in the vCISO Functions section.
+- [x] Keep the supplied full VLK logo lockup in hero/footer brand placements.
+- [x] Verify both visual references at responsive sizes and publish the correction.
+
+## Replace triangle with the new wide reference image
+
+- [x] Upload the newly supplied wide triangle reference.
+- [x] Replace the current Functions-section triangle asset with the new wide image.
+- [x] Verify responsive scaling and publish the corrected reference.
+
+## Cloudflare asset-path fix
+
+- [x] Confirm which external image paths fail on the live custom domain.
+- [x] Move the supplied lockup and triangle images into deployable public CDN asset paths.
+- [x] Update references, rebuild, push, and verify no broken-image or alt-text rendering remains.

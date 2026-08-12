@@ -14,7 +14,8 @@ import {
 
 const brand = {
   logo: "/assets/vlk-logo.png",
-  lockup: "/manus-storage/vlk-infosec-lockup_f37dee74.png",
+  lockup: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663586084465/TDaTBpdDVoXHstOv.png",
+  triangle: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663586084465/NsRiEwncMPJpSNmz.png",
   midnight: "#000030",
   violet: "#6000c0",
   magenta: "#d01060",
@@ -427,7 +428,7 @@ export default function Home() {
               <h2 className="display-heading mt-7 max-w-md">Direction. Structure. Assurance.</h2>
               <p className="mt-7 max-w-sm leading-7 text-white/65">Not by doing every technical task personally—but by ensuring the right security work is prioritized, performed and measured.</p>
               <div className="mt-10 flex justify-center lg:justify-start">
-                <img className="vlk-functions-lockup" src={brand.lockup} alt="VLK InfoSec Consulting shield, wordmark and vCISO descriptor" />
+                <img className="vlk-triangle-reference" src={brand.triangle} alt="Direction, Structure and Assurance triangle" />
               </div>
             </div>
             <div className="grid gap-4">
