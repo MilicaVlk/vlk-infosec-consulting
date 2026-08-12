@@ -124,3 +124,33 @@
 - [x] Add the personal LinkedIn profile link in the About the Founder section.
 - [x] Add the VLK InfoSec Consulting Company Page link in the About section and footer.
 - [x] Verify accessible labels, external-link behavior, and responsive layout before publishing.
+
+## Unified gradient background treatment
+
+- [ ] Audit all major section backgrounds and mobile overrides for flat navy surfaces.
+- [ ] Apply a consistent blue–magenta gradient surface without reducing text/card contrast.
+- [ ] Verify desktop and mobile rendering, then publish the background revision.
+
+## Visual rhythm and background hierarchy
+
+- [ ] Define alternating rhythm: hero (gradient), about/foundation (deep navy), services (gradient), competencies/insights (deep navy), functions (gradient), contact/CTA (gradient).
+- [ ] Implement the balanced background classes in Home.tsx.
+- [ ] Verify the visual cadence, contrast, and mobile flow, then publish.
+
+## Preview visibility verification
+
+- [ ] Confirm whether the user is viewing the Manus preview or the unchanged live domain.
+- [ ] Compare the visible preview against the previous checkpoint and make typography/background changes clearly perceptible.
+- [ ] Re-verify desktop and mobile preview, with no production push until user approval.
+
+## Remove visible personal email and fix preview mismatch
+
+- [ ] Find and remove every visible `milica@vlk-infosec.com` occurrence while keeping alias-based CTA buttons functional.
+- [ ] Confirm the active Manus preview is using the latest working source rather than the previous checkpoint snapshot.
+- [ ] Verify typography, background rhythm, and absence of visible email addresses before user review; do not push.
+
+## Approved email-removal deployment
+
+- [ ] Confirm the visible personal email is removed and build passes.
+- [ ] Push the approved revision to GitHub `main`.
+- [ ] Verify Cloudflare Pages and the live custom domain after deployment.

@@ -110,7 +110,8 @@ body {
   background: var(--vlk-midnight);
   color: var(--vlk-white);
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 17.5px;
+  line-height: 1.75;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -178,11 +179,39 @@ a:focus-visible {
   display: inline-block;
   color: var(--vlk-white);
   font-family: var(--font-brand);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.035em;
   line-height: 1.15;
   text-transform: none;
+}
+
+.vlk-page .vlk-section-copy {
+  font-size: clamp(1.2rem, 1.12rem + 0.25vw, 1.38rem) !important;
+  line-height: 1.85 !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+.vlk-page p,
+.vlk-page li {
+  font-size: clamp(1.08rem, 1.02rem + 0.18vw, 1.2rem);
+  line-height: 1.8;
+}
+
+.vlk-page .text-sm {
+  font-size: 1.02rem !important;
+  line-height: 1.7 !important;
+}
+
+.vlk-page .text-xs {
+  font-size: 0.92rem !important;
+  line-height: 1.6 !important;
+}
+
+.vlk-page .vlk-card-title {
+  font-size: clamp(1.35rem, 1.22rem + 0.3vw, 1.55rem) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em;
 }
 
 .vlk-hero-mark {

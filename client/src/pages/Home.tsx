@@ -157,7 +157,7 @@ const responsibilityGroups = [
 
 function SectionLabel({ number, children }: { number: string; children: string }) {
   return (
-    <div className="flex flex-wrap items-center gap-2.5 text-[0.65rem] font-bold uppercase tracking-[0.2em] text-[#f2d39b] sm:gap-3 sm:text-[0.68rem] sm:tracking-[0.24em]">
+    <div className="flex flex-wrap items-center gap-2.5 text-[0.78rem] font-bold uppercase tracking-[0.16em] text-[#f2d39b] sm:gap-3 sm:text-[0.84rem] sm:tracking-[0.2em]">
       <span className="h-px w-8 bg-[#d4a574] sm:w-10" />
       <span>{number}</span>
       <span className="text-white/30">/</span>
@@ -199,18 +199,18 @@ function NetworkOrnament() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#000030] text-[#fbf8ef]">
+    <div className="vlk-page min-h-screen bg-[#000030] text-[#fbf8ef]">
       <header className="sticky top-0 z-50 border-b border-[#d4a574]/25 bg-[#000030]/95 backdrop-blur-xl">
         <div className="container flex min-h-[78px] items-center justify-between gap-8">
           <a href="#top" aria-label="VLK InfoSec Consulting home" className="group flex items-center gap-3">
             <img src={brand.logo} alt="VLK InfoSec Consulting shield logo" className="h-12 w-12 shrink-0 rounded-full border border-[#d4a574]/50 object-cover shadow-md sm:h-14 sm:w-14" />
           </a>
           <nav className="hidden items-center gap-7 md:flex" aria-label="Primary navigation">
-            <a href="#about" className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-white/65 hover:text-[#f2d39b]">About</a>
-            <a href="#services" className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-white/65 hover:text-[#f2d39b]">Services</a>
-            <a href="#executive-insights" className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-white/65 hover:text-[#f2d39b]">Executive Insights</a>
-            <a href="#competencies" className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-white/65 hover:text-[#f2d39b]">Competencies</a>
-            <a href="#functions" className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-white/65 hover:text-[#f2d39b]">Functions</a>
+            <a href="#about" className="text-[0.78rem] font-bold uppercase tracking-[0.15em] text-white/70 hover:text-[#f2d39b]">About</a>
+            <a href="#services" className="text-[0.78rem] font-bold uppercase tracking-[0.15em] text-white/70 hover:text-[#f2d39b]">Services</a>
+            <a href="#executive-insights" className="text-[0.78rem] font-bold uppercase tracking-[0.15em] text-white/70 hover:text-[#f2d39b]">Executive Insights</a>
+            <a href="#competencies" className="text-[0.78rem] font-bold uppercase tracking-[0.15em] text-white/70 hover:text-[#f2d39b]">Competencies</a>
+            <a href="#functions" className="text-[0.78rem] font-bold uppercase tracking-[0.15em] text-white/70 hover:text-[#f2d39b]">Functions</a>
           </nav>
         </div>
       </header>
@@ -280,7 +280,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative overflow-hidden bg-[#050518] py-24 lg:py-32 border-b border-[#d4a574]/20">
+        <section className="vlk-wave-surface relative overflow-hidden py-24 lg:py-32 border-b border-[#d4a574]/20">
           <NetworkOrnament />
           <div className="container relative z-10 grid gap-16 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
@@ -326,7 +326,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="services" className="relative overflow-hidden bg-[#050518] py-24 lg:py-32">
+        <section id="services" className="relative overflow-hidden bg-[#000030] py-24 lg:py-32">
           <NetworkOrnament />
           <div className="container relative z-10">
             <div className="grid gap-12 lg:grid-cols-[0.72fr_1.28fr]">
@@ -374,7 +374,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="executive-insights" className="relative overflow-hidden bg-[#050518] py-24 lg:py-32 border-b border-[#d4a574]/20">
+        <section id="executive-insights" className="relative overflow-hidden bg-[#000030] py-24 lg:py-32 border-b border-[#d4a574]/20">
           <NetworkOrnament />
           <div className="container relative z-10">
             <div className="max-w-3xl">
@@ -427,7 +427,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="functions" className="relative overflow-hidden bg-[#000030] py-24 lg:py-32">
+        <section id="functions" className="vlk-wave-surface relative overflow-hidden py-24 lg:py-32">
           <NetworkOrnament />
           <div className="container relative z-10 grid gap-14 lg:grid-cols-[0.75fr_1.25fr]">
             <div>
@@ -493,7 +493,7 @@ export default function Home() {
                   <span>General Inquiry</span>
                 </a>
               </div>
-              <div className="mt-6 text-xs text-white/45">vlk-infosec.com · milica@vlk-infosec.com</div>
+              <div className="mt-6 text-xs text-white/45">vlk-infosec.com · Professional inquiries by email</div>
             </div>
           </div>
         </section>
