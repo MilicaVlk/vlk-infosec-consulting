@@ -186,7 +186,7 @@ function HeroBrandMark() {
 
 function TriangleMotif() {
   return (
-    <div className="w-full max-w-[280px]" aria-label="Direction, Structure and Assurance triangle motif">
+    <div className="w-full max-w-[220px] mx-auto" aria-label="Direction, Structure and Assurance triangle motif">
       <svg viewBox="0 0 360 300" role="img" className="h-auto w-full">
         <defs>
           <linearGradient id="vlkTriangleGold" x1="0" x2="1" y1="0" y2="1">
@@ -195,14 +195,14 @@ function TriangleMotif() {
             <stop offset="1" stopColor="#95632e" />
           </linearGradient>
         </defs>
-        <path d="M180 36 286 226H74L180 36Z" fill="none" stroke="url(#vlkTriangleGold)" strokeWidth="4" strokeLinejoin="round" />
-        <path d="M180 62 255 204H105L180 62Z" fill="none" stroke="#d4a574" strokeOpacity="0.24" strokeWidth="1.25" />
-        <circle cx="180" cy="36" r="3.5" fill="#f2d39b" />
-        <circle cx="74" cy="226" r="3.5" fill="#f2d39b" />
-        <circle cx="286" cy="226" r="3.5" fill="#f2d39b" />
-        <text x="180" y="24" textAnchor="middle" fill="#f2d39b" fontSize="11" fontWeight="700" letterSpacing="1.8">STRUCTURE</text>
-        <text x="109" y="151" textAnchor="middle" fill="#f2d39b" fontSize="11" fontWeight="700" letterSpacing="1.6" transform="rotate(-59 109 151)">DIRECTION</text>
-        <text x="251" y="151" textAnchor="middle" fill="#f2d39b" fontSize="11" fontWeight="700" letterSpacing="1.6" transform="rotate(59 251 151)">ASSURANCE</text>
+        <path d="M180 42 278 218H82L180 42Z" fill="none" stroke="url(#vlkTriangleGold)" strokeWidth="5.5" strokeLinejoin="round" />
+        <path d="M180 72 242 190H118L180 72Z" fill="none" stroke="#d4a574" strokeOpacity="0.28" strokeWidth="1.5" />
+        <circle cx="180" cy="42" r="4.5" fill="#f2d39b" />
+        <circle cx="82" cy="218" r="4.5" fill="#f2d39b" />
+        <circle cx="278" cy="218" r="4.5" fill="#f2d39b" />
+        <text x="114" y="145" textAnchor="middle" fill="#f2d39b" fontSize="11" fontWeight="700" letterSpacing="1.8" transform="rotate(58 114 145)">DIRECTION</text>
+        <text x="180" y="28" textAnchor="middle" fill="#f2d39b" fontSize="11" fontWeight="700" letterSpacing="1.8">STRUCTURE</text>
+        <text x="248" y="145" textAnchor="middle" fill="#f2d39b" fontSize="11" fontWeight="700" letterSpacing="1.8" transform="rotate(-58 248 145)">ASSURANCE</text>
       </svg>
     </div>
   );
@@ -266,12 +266,12 @@ export default function Home() {
                 VLK InfoSec Consulting was founded by Milica Vlk, a telecommunications engineer and cybersecurity professional with 17+ years of experience across technology, infrastructure, engineering, project management, and information security.
               </p>
               <p className="mt-6 leading-7 text-white/65">
-                My career started close to the technology itself—building, operating, troubleshooting, and improving complex technology environments long before cybersecurity became the discipline it is today.
+                Her career started close to the technology itself—building, operating, troubleshooting, and improving complex technology environments long before cybersecurity became the discipline it is today.
               </p>
               <div className="mt-8 rounded-2xl border border-[#d4a574]/30 bg-[#050518]/80 p-6 backdrop-blur">
                 <p className="text-sm font-semibold uppercase tracking-wider text-[#f2d39b]">From Engineering to Leadership</p>
                 <p className="mt-3 text-sm leading-6 text-white/70">
-                  My career gradually expanded from hands-on engineering into technical leadership, project management, and program management at Telekom Srbija and TeleGroup, evolving naturally into comprehensive cybersecurity governance and vCISO advisory.
+                  Her career gradually expanded from hands-on engineering into technical leadership, project management, and program management at Telekom Srbija and TeleGroup, evolving naturally into comprehensive cybersecurity governance and vCISO advisory.
                 </p>
               </div>
             </div>
@@ -307,13 +307,13 @@ export default function Home() {
               <h2 className="display-heading mt-7">Building security that works in the real world.</h2>
               <div className="mt-8 space-y-6 text-white/75">
                 <p className="leading-7">
-                  I spent 11 years building the technical foundation that later shaped my approach to cybersecurity. From contributing to the early development and scale of large IPTV, VOD, and nPVR platforms to working as a radio network optimization engineer across GSM, UMTS, and LTE environments, I gained deep insight into complex production systems.
+                  She spent 11 years building the technical foundation that later shaped her approach to cybersecurity. From contributing to the early development and scale of large IPTV, VOD, and nPVR platforms to working as a radio network optimization engineer across GSM, UMTS, and LTE environments, she gained deep insight into complex production systems.
                 </p>
                 <p className="leading-7">
-                  Alongside telecommunications engineering, I worked as a software developer, gaining another perspective on complex systems—from software and interfaces to infrastructure and service performance. Working across these environments taught me to look beyond individual technologies and understand how dependencies exist, how changes propagate, and where operational risks emerge.
+                  Alongside telecommunications engineering, she worked as a software developer, gaining another perspective on complex systems—from software and interfaces to infrastructure and service performance. Working across these environments taught her to look beyond individual technologies and understand how dependencies exist, how changes propagate, and where operational risks emerge.
                 </p>
                 <p className="leading-7">
-                  For me, cybersecurity was never a complete career change; it was a natural continuation. Firewalls, networks, servers, access controls, availability, segmentation, and operational risk were already part of my technical world long before cybersecurity became as widely discussed as it is today.
+                  For her, cybersecurity was never a complete career change; it was a natural continuation. Firewalls, networks, servers, access controls, availability, segmentation, and operational risk were already part of her technical world long before cybersecurity became as widely discussed as it is today.
                 </p>
               </div>
             </div>

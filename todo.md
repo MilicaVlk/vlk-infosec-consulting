@@ -63,3 +63,9 @@
 - [x] Place Direction bottom-left, Structure top, and Assurance bottom-right.
 - [x] Reduce the triangle size, slightly thicken the line, and keep labels readable along the edges.
 - [x] Verify, build, and publish the focused graphic revision.
+
+## Third-person founder copy and clockwise triangle revision
+
+- [x] Rewrite the About the Founder section in professional third-person voice while keeping one personal quote.
+- [x] Redesign the SVG triangle to be smaller, visibly thicker, with clockwise labels (Direction → Structure → Assurance) following the edges.
+- [x] Verify, build, and publish the final website updates.
